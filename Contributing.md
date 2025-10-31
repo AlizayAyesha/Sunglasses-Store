@@ -27,16 +27,22 @@ Follow these steps to set up the project locally:
 
 1. **Fork** this repository.
 2. **Clone** your fork:
-    ```bash
-    git clone [https://github.com/your-username/sunglasses-store.git](https://github.com/your-username/sunglasses-store.git)
-    cd sunglasses-store
-    ```
-3. **Set the upstream remote** (for syncing with the main repository):
-    ```bash
-    git remote add upstream [https://github.com/Sunglasses-Store/sunglasses-store.git](https://github.com/Sunglasses-Store/sunglasses-store.git)
-    ```
-4. **Install dependencies:**
-    ...
+   ```bash
+   git clone https://github.com/your-username/sunglasses-store.git
+   cd sunglasses-store
+   ```
+3. **Install dependencies:**
+   ```bash
+   npm install
+   # or
+   yarn install
+   ```
+4. **Start the development server:**
+   ```bash
+   npm start
+   # or
+   yarn start
+   ```
 5. Open your browser and visit ➜ **[http://localhost:3000](http://localhost:3000)**  
 
 ✅ You’re now ready to start contributing!
@@ -47,12 +53,15 @@ Follow these steps to set up the project locally:
 
 There are several ways you can make meaningful contributions:
 
-- 🐞 **Fix bugs** or improve code efficiency (e.g., checkout process failures).
-- ✨ **Add new features** (e.g., guest checkout, product comparison).
-- 🎨 **Enhance UI/UX** for a smoother user experience (e.g., optimizing product card display, improving mobile navigation).
-- 💰 **Implement E-commerce Logic** (e.g., tax calculation, coupon handling).  <-- **NEW**
-- 🧹 Refactor or clean up existing code.
-- 📚 Improve documentation.
+- 🐞 Fix bugs or improve code efficiency  
+- ✨ Add new features  
+- 🎨 Enhance UI/UX for a smoother user experience  
+- 🧹 Refactor or clean up existing code  
+- 📚 Improve documentation  
+
+Every contribution, big or small, matters! 🙌  
+
+---
 
 ## 🔄 Contribution Workflow
 
@@ -75,9 +84,19 @@ To ensure smooth collaboration, please follow this standard workflow:
 
 ## 🧩 Code Style Guidelines
 
-- Use **Tailwind CSS** or **Styled Components** consistently. (Prefer **Tailwind CSS** for all new styling, unless working within an existing Styled Component file.) <-- **CLARIFICATION**
-- Use clear variable and function names following **camelCase** convention. <-- **NEW STANDARD**
-- **Do not** commit changes to auto-generated files (e.g., lock files or build output). <-- **NEW RULE**
+To maintain clean, readable, and consistent code:
+
+- Follow **React.js best practices** and **PascalCase** for components.  
+- Write **modular and reusable** components.  
+- Use **Tailwind CSS** or **Styled Components** consistently.  
+- Prefer **functional components** with **React Hooks**.  
+- Run the linter before committing:
+  ```bash
+  npm run lint
+  ```
+- Ensure responsiveness and cross-browser compatibility for UI updates.
+
+---
 
 ## 📝 Commit Message Convention
 
@@ -105,10 +124,7 @@ type(scope): short description
 2. Add a **clear title and description** summarizing your changes.  
 3. Attach **screenshots or GIFs** if your update affects the UI.  
 4. Check for and resolve **merge conflicts**.  
-5. **Wait for a maintainer to review and approve your PR.**
-6. **Self-Review Checklist:** Before requesting a review, confirm that your branch is up-to-date with `main` and that the linter/tests pass. <-- **NEW STEP**
-
-💡 **Tip:** Keep PRs small and focused for faster reviews. 
+5. Wait for a maintainer to review and approve your PR.  
 
 💡 **Tip:** Keep PRs small and focused for faster reviews.
 
